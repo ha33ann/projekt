@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: sticky;
+    top: 0;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    margin: 20px 0px;
+}
+.navbar ul li{
+    font-family: century;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    padding: 8px 25px;
+    transition: all .5s ease;
+}
+.navbar ul li a:hover{
+    background-color: white;
+    color: black;
+    box-shadow: 0 0 10px white;
+}
+
+#hem{
+    display: flex;
+    flex-direction: column;
+    
+    height: 840px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+#hem::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: url('img/bild1.jpg') no-repeat center center/cover;
+    height: 900px;
+    width: 100%;
+    z-index: -1;
+    opacity: .8;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+}
+
+.headings{
+    font-family: century;
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-top: -40px;
+}
+
+.box{
+    
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 130px;
+    border: 1px solid black;
+    margin: 10px;
+    margin-top: 50px;
+    align-items: center;
+    text-align: justify;
+    padding: 23px;
+    border-radius: 15px;
+    background: linear-gradient(to top, rgb(255,45,45) 50%, rgb(0, 0, 0) 50%);
+    background-size: 100% 200%;
+    transition: all .8s;
+}
+
+.box:hover{
+    background-position: left bottom;
+    color: white;
+    border: none;
+    box-shadow: 0 0 20px rgb(255,45,45);
+}
+
+.box img{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    padding: 1px;
+}
+
+.hemsida{
+    width: 99vw;
+    height: 90vh;
+    font-weight: bold;
+    font-size: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 50px 480px 100px;
+    
+    gap: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.hemsida div{
+    padding: 10px;
+}
+
+.header{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.content-large{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    color: yellow;
+    text-align: center;
+}
+
+.content-small{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.footer{
+    grid-row: 3/4;
+    grid-column: 1 / span 3;
+    background-color: rgb(214, 84, 84);
+}
+
+.header{
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+    width: 100%;
+}
+
+.sociala-links{
+    width: 2p0x;
+
+}
+
+.sociala-medier ul{
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.copyright{
+    text-align: center;
+    margin-top: -60px;
+    color: white;
+}
+
+
+.layout{
+    width: 100%;
+}
+
+.logo{
+    width: 30px;
+    margin-right: 2000px;
+    }
+
+.namn{
+    margin-top: -40px;
+}
